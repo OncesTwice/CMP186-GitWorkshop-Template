@@ -17,6 +17,7 @@ namespace SalaryCalculator
 
            switch (employeeType)
             {
+<<<<<<< HEAD
                 case EmployeeType.Engineer:
                     factor = 1;
                     break;
@@ -32,6 +33,17 @@ namespace SalaryCalculator
                     break;
                 default:
                     break;
+=======
+                factor = 1;
+            }
+            else if (employeeType == EmployeeType.SeniorEngineer || employeeType == EmployeeType.Manager)
+            {
+                factor = 2m;
+            }
+            else if (employeeType == EmployeeType.SeniorManager)
+            {
+                factor = 3;
+>>>>>>> main
             }
             // TODO: if employee is Expert, set factor = 3
 
