@@ -15,8 +15,25 @@ namespace SalaryCalculator
 
             decimal factor = 0;
 
-            if (employeeType == EmployeeType.Engineer)
+           switch (employeeType)
             {
+<<<<<<< HEAD
+                case EmployeeType.Engineer:
+                    factor = 1;
+                    break;
+                case EmployeeType.SeniorEngineer:
+                case EmployeeType.Manager:
+                    factor = 2;
+                    break;
+                case EmployeeType.SeniorManager:
+                    factor = 3;
+                    break;
+                case EmployeeType.Expert:
+                    factor = 3;
+                    break;
+                default:
+                    break;
+=======
                 factor = 1;
             }
             else if (employeeType == EmployeeType.SeniorEngineer || employeeType == EmployeeType.Manager)
@@ -26,6 +43,7 @@ namespace SalaryCalculator
             else if (employeeType == EmployeeType.SeniorManager)
             {
                 factor = 3;
+>>>>>>> main
             }
             // TODO: if employee is Expert, set factor = 3
 
